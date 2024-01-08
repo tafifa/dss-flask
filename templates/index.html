@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sistem Pendukung Keputusan Golongan UKT Mahasiswa</title>
+  <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body>
+  <h1>Sistem Pendukung Keputusan Golongan UKT Mahasiswa</h1>
+  <div class="container">
+    <form action="{{ url_for('submit') }}" method="POST">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama">
+  
+      <label for="jenisPekerjaan">Jenis Pekerjaan Orang Tua:</label>
+      <select id="c1" name="jenisPekerjaan">
+        <!-- <option value="c1_opt1">PNS</option>
+        <option value="c1_opt2">Swasta</option>
+        <option value="c1_opt3">Tidak Bekerja</option> -->
+        <option value=30>PNS</option>
+        <option value=60>Swasta</option>
+        <option value=100>Tidak Bekerja</option>
+      </select>
+  
+      <label for="jumlahPenghasilan">Jumlah Penghasilan Orang Tua:</label>
+      <select id="c2" name="jumlahPenghasilan">
+        <!-- <option value="c2_opt1">Kurang dari 1 Juta</option>
+        <option value="c2_opt2">1 Juta - 3 Juta</option>
+        <option value="c2_opt3">3 Juta - 5 Juta</option>
+        <option value="c2_opt4">5 Juta - 7 Juta</option>
+        <option value="c2_opt5">Lebih dari 7 Juta</option> -->
+        <option value=100>Kurang dari 1 Juta</option>
+        <option value=80>1 Juta - 3 Juta</option>
+        <option value=60>3 Juta - 5 Juta</option>
+        <option value=30>5 Juta - 7 Juta</option>
+        <option value=10>Lebih dari 7 Juta</option>
+      </select>
+  
+      <label for="jumlahTanggungan">Jumlah Tanggungan Orang Tua:</label>
+      <input type="number" id="c3" name="jumlahTanggungan">
+  
+      <label for="jenisRumah">Jenis Kepemilikan Tempat Tinggal:</label>
+      <select id="c4" name="jenisRumah">
+        <!-- <option value="c4_opt1">Rumah Sendiri</option>
+        <option value="c4_opt2">Rumah Keluarga</option>
+        <option value="c4_opt3">Rumah Kontrakan/Apartemen</option>
+        <option value="c4_opt4">Rumah Kos</option>
+        <option value="c4_opt5">Tidak Punya Rumah</option> -->
+        <option value=20>Rumah Sendiri</option>
+        <option value=40>Rumah Keluarga</option>
+        <option value=60>Rumah Kontrakan/Apartemen</option>
+        <option value=80>Rumah Kos</option>
+        <option value=100>Tidak Punya Rumah</option>
+      </select>
+  
+      <label for="jumlahKendaraan">Jumlah Kepemilikan Kendaraan:</label>
+      <input type="number" id="c5" name="jumlahKendaraan">
+  
+      <input type="submit" value="Enter">
+    </form>
+    <button type="button" id="hitung" onclick="location.href='/result'">Hitung</button>
+  </div>
+</body>
+</html>

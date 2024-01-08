@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sistem Pendukung Keputusan Golongan UKT Mahasiswa</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <h1>Hasil Perhitungan Sistem Pendukung Keputusan Golongan UKT Mahasiswa</h1>
+  <div class="container">
+    <!-- <table>
+      <tr>
+        <th>Nama</th>
+        <th>IPK</th>
+        <th>Penghasilan Orang Tua</th>
+        <th>Jumlah Tanggungan</th>
+        <th>Golongan UKT</th>
+      </tr>
+      <tr>
+        <td>{{nama}}</td>
+        <td>{{ipk}}</td>
+        <td>{{penghasilan}}</td>
+        <td>{{tanggungan}}</td>
+        <td>{{golongan_ukt}}</td>
+      </tr>
+    </table> -->
+    <table>
+      <th>Nama</th>
+      <th>Jenis Pekerjaan Orang Tua</th>
+      <th>Jumlah Penghasilan Orang Tua</th>
+      <th>Jumlah Tanggungan Orang Tua</th>
+      <th>Jenis Kepemilikan Tempat Tinggal</th>
+      <th>Jumlah Kepemilikan Kendaraan</th>
+      <th>Golongan UKT</th>
+      {% for row in data %}
+      <tr>
+          {% for item in row %}
+          <td>{{ item }}</td>
+          {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+    <button type="button" id="back" onclick="location.href='/home'">Kembali</button>
+  </div>
+</body>
+</html>

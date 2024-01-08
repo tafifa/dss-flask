@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"], input[type='number'] , select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+input[type="submit"] , button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+input[type="submit"]:hover, button:hover {
+  background-color: #3e8e41;
+}
+table {
+  /* width: 50%; */
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table td {
+  padding: 10px;
+  text-align: center;
+}
+table th {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+.btn-back {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+.btn-back a {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-back a:hover {
+  background-color: #3e8e41;
+}
+.container {
+  width: 75%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#hitung, #back {
+  margin-top: 10px;
+  background-color: rgb(255, 217, 0);
+}
+#hitung:hover, #back:hover {
+  background-color: rgb(210, 179, 0);
+}
